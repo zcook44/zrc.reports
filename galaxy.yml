@@ -3,7 +3,7 @@
 # The namespace of the collection. This can be a company/brand/organization or product namespace under which all
 # content lives. May only contain alphanumeric lowercase characters and underscores. Namespaces cannot start with
 # underscores or numbers and cannot contain consecutive underscores
-namespace: shadowman
+namespace: zrc
 
 # The name of the collection. Has the same character restrictions as 'namespace'
 name: reports
@@ -24,7 +24,7 @@ license_file: LICENSE
 authors:
 - Alexander Dworjan <adworjan@redhat.com>
 
-repository: https://github.com/shadowman-lab/shadowman.reports
+repository: https://github.com/zcook44/zrc.reports
 
 ### OPTIONAL but strongly recommended
 

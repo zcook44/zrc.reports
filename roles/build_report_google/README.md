@@ -59,8 +59,8 @@ The role can be used to create an html report on Google statistics onto an apach
 
   - name: Build the report
     ansible.builtin.include_role:
-      name: shadowman.reports.build_report_google
+      name: zrc.reports.build_report_google
       apply:
-        delegate_to: report.shadowman.dev
+        delegate_to: report.zrc.dev
         run_once: true
 ```

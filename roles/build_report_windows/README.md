@@ -32,18 +32,18 @@ The role can be used to create an html report on any number of Linux hosts using
   tasks:
 
     - name: "Scan packages (Windows)"
-      shadowman.reports.win_scan_packages:
+      zrc.reports.win_scan_packages:
       when: ansible_os_family == "Windows"
 
     - name: "Scan services (Windows)"
-      shadowman.reports.win_scan_services:
+      zrc.reports.win_scan_services:
       when: ansible_os_family == "Windows"
 
     - name: Build the report
       ansible.builtin.include_role:
-        name: shadowman.reports.build_report_windows
+        name: zrc.reports.build_report_windows
         apply:
-          delegate_to: report.shadowman.dev
+          delegate_to: report.zrc.dev
           run_once: true
       
 ```

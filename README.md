@@ -1,6 +1,6 @@
-# Shadowman Reports Collection
+# ZRC Reports Collection
 
-The Ansible Shadowman Reports collection includes a variety of Ansible content to help automate the creation of Linux, Windows, Cloud, Active Directory, and Networking reports.
+The Ansible ZRC Reports collection includes a variety of Ansible content to help automate the creation of Linux, Windows, Cloud, Active Directory, and Networking reports.
 
 <!--start requires_ansible-->
 ## Ansible version compatibility
@@ -27,27 +27,27 @@ This collection has been tested against RHEL 7, 8, 9, Windows Server 2016, IOS, 
 ### Modules
 Name | Description
 --- | ---
-[shadowman.reports.win_scan_packages](https://github.com/shadowman-lab/shadowman.reports/blob/main/docs/shadowman.reports.win_scan_packages_module.rst)|Scans for all packages on a Windows server
-[shadowman.reports.win_scan_services](https://github.com/shadowman-lab/shadowman.reports/blob/main/docs/shadowman.reports.win_scan_services_module.rst)|Scans for all services on a Windows server
+[zrc.reports.win_scan_packages](https://github.com/zcook44/zrc.reports/blob/main/docs/zrc.reports.win_scan_packages_module.rst)|Scans for all packages on a Windows server
+[zrc.reports.win_scan_services](https://github.com/zcook44/zrc.reports/blob/main/docs/zrc.reports.win_scan_services_module.rst)|Scans for all services on a Windows server
 
 <!--end collection content-->
 
 ## Installing this collection
 
-You can install the Shadowman Reports collection with the Ansible Galaxy CLI:
+You can install the ZRC Reports collection with the Ansible Galaxy CLI:
 
-    ansible-galaxy collection install shadowman.reports
+    ansible-galaxy collection install zrc.reports
 
 You can also include it in a `requirements.yml` file and install it with `ansible-galaxy collection install -r requirements.yml`, using the format:
 
 ```yaml
 ---
 collections:
-  - name: shadowman.reports
+  - name: zrc.reports
 ```
 ## Using this collection
 
-### Using Shadowman Reports Ansible Collection
+### Using ZRC Reports Ansible Collection
 
 An example for using this collection to scan a Windows host for packages:
 
@@ -60,7 +60,7 @@ An example for using this collection to scan a Windows host for packages:
   tasks:
 
     - name: "Scan packages (Windows)"
-      shadowman.reports.win_scan_packages:
+      zrc.reports.win_scan_packages:
 
 ```
 

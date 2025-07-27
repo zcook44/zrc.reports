@@ -50,8 +50,8 @@ The role can be used to create an html report on Azure statistics onto an apache
 
   - name: Build the report
     ansible.builtin.include_role:
-      name: shadowman.reports.build_report_azure
+      name: zrc.reports.build_report_azure
       apply:
-        delegate_to: report.shadowman.dev
+        delegate_to: report.zrc.dev
         run_once: true      
 ```

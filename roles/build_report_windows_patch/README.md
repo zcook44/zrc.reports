@@ -39,9 +39,9 @@ The role can be used to create an html patching report on a Linux host using any
     
   - name: Build the report
     ansible.builtin.include_role:
-      name: shadowman.reports.build_report_windows_patch
+      name: zrc.reports.build_report_windows_patch
       apply:
-        delegate_to: report.shadowman.dev
+        delegate_to: report.zrc.dev
         run_once: true
       
 ```

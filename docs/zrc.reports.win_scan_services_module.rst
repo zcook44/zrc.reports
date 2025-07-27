@@ -1,11 +1,11 @@
-.. _shadowman.reports.win_scan_packages:
+.. _zrc.reports.win_scan_services:
 
 
 ******************
-shadowman.reports.win_scan_packages
+zrc.reports.win_scan_services
 ******************
 
-**Windows Scan Packages module**
+**Windows Scan Services module**
 
 
 Version added: 1.0.0
@@ -17,7 +17,7 @@ Version added: 1.0.0
 
 Synopsis
 --------
-- This module scans packages on Windows hosts.
+- This module scans services on Windows hosts.
 
 
 Parameters
@@ -40,8 +40,8 @@ Examples
     
     tasks:
 
-    - name: Scan Packages
-      shadowman.reports.win_scan_packages:
+    - name: Scan Services
+      zrc.reports.win_scan_services:
         
 
 Return Values
@@ -59,7 +59,7 @@ Common return values are documented `here <https://docs.ansible.com/ansible/late
             <tr>
                 <td colspan="1">
                     <div class="ansibleOptionAnchor" id="return-"></div>
-                    <b>packages</b>
+                    <b>services</b>
                     <a class="ansibleOptionLink" href="#return-" title="Permalink to this return value"></a>
                     <div style="font-size: small">
                       <span style="color: purple">list</span>
@@ -67,7 +67,7 @@ Common return values are documented `here <https://docs.ansible.com/ansible/late
                 </td>
                 <td>always</td>
                 <td>
-                            <div>A list of packages, including the name, version, publisher and arch.</div>
+                            <div>A list of packages, including the name, Windows Service Name, and state.</div>
                     <br/>
                         <div style="font-size: smaller"><b>Sample:</b></div>
                         <div style="font-size: smaller; color: blue; word-wrap: break-word; word-break: break-all;">The configuration returned will always be in the same format of the parameters above.</div>
