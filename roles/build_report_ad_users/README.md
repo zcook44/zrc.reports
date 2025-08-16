@@ -45,6 +45,6 @@ The role can be used to create an html report on a Linux host by getting users f
       ansible.builtin.include_role:
         name: shadowman.reports.build_report_ad_users
         apply:
-          delegate_to: report.shadowman.dev
+          delegate_to: report.zrc.dev
           run_once: true
 ```
